@@ -30,8 +30,12 @@ fs.writeFile(my_file, buffer, (err) => {
     log('Дані з буферу записано у файл');
 })
 
-const data = fs.readFile(my_file);
-log(data.toString());
+fs.readFile(my_file, (err, data) => {
+    if (err){
+        return error('Помилка читання даних:', err);
+    }
+    log(data.toString());
+});
 
 //Задача 3
 /*const str = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque reprehenderit non quia omnis sint tempora consequatur, quod illum earum placeat dolores voluptas quidem eos in facere nulla nesciunt nisi eligendi.';
