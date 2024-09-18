@@ -20,7 +20,7 @@ fs.writeFile(my_file, buffer, (err) => {
 });*/
 
 //Задача 2
-const randomData = random.sentence(5, 10);
+/*const randomData = random.sentence(5, 10);
 buffer = Buffer.from(randomData, 'utf-8');
 
 fs.writeFile(my_file, buffer, (err) => {
@@ -35,7 +35,7 @@ fs.readFile(my_file, (err, data) => {
         return error('Помилка читання даних:', err);
     }
     log(data.toString());
-});
+});*/
 
 //Задача 3
 /*const str = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque reprehenderit non quia omnis sint tempora consequatur, quod illum earum placeat dolores voluptas quidem eos in facere nulla nesciunt nisi eligendi.';
